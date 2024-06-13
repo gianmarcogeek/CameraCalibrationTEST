@@ -2,12 +2,12 @@ import cv2
 
 def gstreamer_pipeline(
     sensor_id=1,
-    capture_width=3840,
-    capture_height=2160,
-    display_width=3840,
-    display_height=2160,
+    capture_width=1920,
+    capture_height=1080,
+    display_width=1920,
+    display_height=1080,
     framerate=10,
-    flip_method=2,
+    flip_method=0,
 ):
     return (
         "nvarguscamerasrc sensor-id=%d ! "
